@@ -1,6 +1,6 @@
 
 exports.get_todo_list = (req, res, next) => { 
-
+  res.render('todo');
 };
 
 exports.post_todo = (req, res, next) => { 
