@@ -1,12 +1,14 @@
 <html>
   <head>
     <title>To-Do App</title>
+    <link rel="stylesheet" href="/assets/styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/assets/todo-ajax.js"></script>
   </head>
   <body>
     <h1>To-Do List</h1>
-    <div>
+    <div id="todo-form">
       <form action="post">
         <input type="text" name="item" placeholder="Add new item..." required />
         <button type="submit">Add Item</button>
