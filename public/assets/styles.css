@@ -1,13 +1,18 @@
 body {
-  background: #0d1521;
+  background: #BCDEFA;
+  background: #BCE2FA;
   font-family: 'Roboto', sans-serif;
-  color: #989898;
+  color: #000000;
+}
+
+body h1 {
+  color: #12283A;
 }
 
 #todo-form {
   position: relative;
   width: 95%;
-  background: #090d13;
+  background: #FFFFFF;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
@@ -23,21 +28,22 @@ body {
 input[type="text"] {
   width: 70%;
   padding: 20px;
-  background:#181c22;
+  background: #FFFFFF;
   border: 0;
   float: left;
   font-size: 20px;
-  color: #989898;
+  color: black;
+  border: 0.3px #3490DC solid;
 }
 
 button { 
   padding: 20px;
   width: 30%;
   float: left;
-  background: #23282e;
+  background: #3490DC;
   border: 0;
   box-sizing: border-box;
-  color: #fff;
+  color: #FFFFFF;
   cursor: pointer;
   font-size: 20px;
 }
@@ -60,6 +66,10 @@ li {
 
 li:hover {
   text-decoration: line-through;
-  background: rgba(0,0,0,0.2);
+  background: rgba(188, 222, 250, 0.43);
 }
 
+h1 {
+  background: url(/assets/logo.svg) no-repeat center;
+  margin-bottom: 0;
+}
