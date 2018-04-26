@@ -13,8 +13,12 @@ mongoose.connect(secrets.mongodb.dbURI, () => {
 
 app.use(express.static('./public'));
 
-app.use('/todo', todoRoutes);
+app.use('/', todoRoutes);
+
+app.use((req, res, next) => {
+  res.render('error404');
+});
 
 app.listen(port, () => {
-  console.log('To-Do App is running on port ' + port)
+  console.log('To-Do App is running on port ' + port);
 });
