@@ -1,5 +1,4 @@
 const Todo = require('../models/todo');
-//var data = [{item: 'item 1'}, {item: 'item 2'}, {item: 'item 3'}];
 
 exports.get_todo_list = (req, res, next) => { 
   Todo.find()
